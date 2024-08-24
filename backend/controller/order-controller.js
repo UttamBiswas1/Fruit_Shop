@@ -6,7 +6,7 @@ const stripe=new Stripe(process.env.STRIPE_SECRET_KEY);
 
 // placing order from frontend
 const placeOrder=async (req,res)=>{
-  const forntend_url="http://localhost:5173";
+  const forntend_url="https://fruit-shop-frontend.onrender.com";
   try {
     const newOrder=new orderModel({
       userId:req.body.userId,
