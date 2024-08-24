@@ -1,5 +1,5 @@
 import mongoose from "mongoose";
-
+mongoose.connect('mongodb://0.0.0.0/Fruit-Store');
 const orderSchema=new mongoose.Schema({
   userId:{type:String,required:true},
   items:{type:Array,required:true},
