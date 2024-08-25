@@ -1,5 +1,4 @@
 import mongoose from 'mongoose';
-mongoose.connect('mongodb://0.0.0.0/Fruit-Store');
 const userSchema=mongoose.Schema({
   name:{
     type:String,
