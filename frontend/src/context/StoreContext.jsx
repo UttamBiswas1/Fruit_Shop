@@ -4,7 +4,7 @@ import axios from "axios";
 
 const StoreContextProvider = (props) => {
   const [cartItems, setCartItems] = useState({});
-  const url = "https://fruit-shop-backend-xyt9.onrender.com";
+  const url = "https://fruit-shop-5i8c.onrender.com";
   const [token, setToken] = useState("");
   const [fruitList, setFruit_list] = useState([]);
 
