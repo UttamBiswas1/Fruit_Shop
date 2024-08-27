@@ -41,6 +41,9 @@ const Navbar = ({setShowLogin}) => {
     setToken("");
     navigate("/");
   };
+  const gotoMyOrder=()=>{
+    navigate('/myorders')
+  }
   const [open, setOpen] = useState(false);
   return (
     <>
@@ -84,7 +87,7 @@ const Navbar = ({setShowLogin}) => {
              <div className={getTotalCartAmount()===0?"":"dot"}></div>
             </div>
 
-            {!token ? (<button onClick={() => {setShowLogin(true);}}>Sign in</button>) : (
+            {!token ? (<button className="sm:text-base text-sm" onClick={() => {setShowLogin(true);}}>Sign in</button>) : (
               <div className="navbar-profile">
                 <div className="navbar-profile ml-4 mr-1 sm:mr-0  mt-1">
                   <img
@@ -93,7 +96,7 @@ const Navbar = ({setShowLogin}) => {
                     className=" w-9 h-9 hover:bg-primary rounded-full p-2 "
                   />
                   <ul className="nav-profile-dropdown hidden absolute z-1 mr-10">
-                    <li className="flex gap-4 items-center cursor-pointer pr-5">
+                    <li className="flex gap-4 items-center cursor-pointer pr-5" onClick={gotoMyOrder} >
                       <img src={bag_icon} alt="" />
                       <p>Orders</p>
                     </li>

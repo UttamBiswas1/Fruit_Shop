@@ -41,7 +41,7 @@ const LoginPopup = ({setShowLogin}) => {
 
   return (
     <div className=' bg-[#00000090] grid w-full h-full absolute z-20 '>
-       <form onSubmit={onLogin} action="" className='abcd flex flex-col max-w-md gap-[25px] px-[25px] py-[30px] text-[15px] border-r-4 bg-secondary self-center ml-96'>
+       <form onSubmit={onLogin} action="" className='abcd flex flex-col max-w-md gap-[25px] px-[25px] py-[30px] text-[15px] border-r-4 bg-secondary self-center sm:ml-96 sm:mr-0 mx-2 rounded-lg'>
         <div className="flex justify-between items-center text-black">
           <h2>{currentState}</h2>
           <img onClick={()=>setShowLogin(false)} src={cross_icon} alt="" className='w-[16px]  cursor-pointer'/>
