@@ -10,9 +10,9 @@ const ResponsiveMenu = ({open}) => {
         animate={{opacity:1,y:0}} transition={{duration:0.3}} exit={{opacity:0,y:-100}}>
           <div className='text-xl font-semibold uppercase bg-primary text-white py-10 m-6 rounded-3xl'>
             <ul className='flex flex-col items-center gap-10'>
-              <li onClick='/'>Home</li>
-              <li onClick='/menus'>Products</li>
-              <li onClick='/brand-info'>About</li>
+              <a href='/'>Home</a>
+              <a href='/menus'>Products</a>
+              <a href='/brand-info'>About</a>
               <li>Contact</li>
               <li>Profile</li>
             </ul>
